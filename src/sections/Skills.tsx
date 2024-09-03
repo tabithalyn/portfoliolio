@@ -1,9 +1,11 @@
 import parse from "html-react-parser";
 import { skills } from "../assets/skills";
+import { SiExpress, SiNextdotjs } from "react-icons/si";
 
 type SkillType = {
   name: string;
   description: string;
+  iClass: string;
 }
 
 const Skills = () => {
@@ -15,9 +17,15 @@ const Skills = () => {
         </div>
         <div className="grid grid-cols-4 gap-9 mb-10">
           {skills.map((skill:SkillType, id:number) => (
-            <div key={id} className="flex flex-wrap items-start justify-center gap-4 p-8 rounded-lg border border-gray-100 bg-gray-50">
-              <h2 className="bg-orange-200 text-xl font-semibold">{skill.name}</h2>
-              <p className="bg-rose-200">{parse(skill.description)}</p>
+            <div key={id} className="flex flex-wrap items-start justify-center gap-1 p-4 rounded-lg border border-gray-100 bg-gray-50">
+              <h2 className="text-xl font-semibold w-full text-center flex justify-between border-b border-b-gray-200 pb-2">
+                {skill.name}
+                {
+                  skill.name === "NextJS" ?
+                  <SiNextdotjs /> : skill.name === "ExpressJS" ? <SiExpress /> : <i className={skill.iClass} />
+                }
+              </h2>
+              <p className="h-[80%] w-full p-1">{parse(skill.description)}</p>
             </div>
           ))}
         </div>

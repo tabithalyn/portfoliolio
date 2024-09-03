@@ -28,7 +28,7 @@ const Contact = () => {
             <input type="text" name="email" id="email" placeholder="Email..." autoComplete="false" className="border-0 w-full h-7 pl-5 rounded-xl bg-gray-700 text-lg text-gray-200" />
             <input type="text" name="message" id="message" placeholder="Message..." className="border-0 w-full pb-32 pt-4 pl-5 rounded-xl bg-gray-700 text-lg text-gray-200 flex items-start" />
             <p className="w-full flex justify-center">
-              <button type="submit" className="border-0 text-gray-100 rounded-full text-xl py-5 px-10 cursor-pointer transition-all hover:scale-105">Submit</button>
+              <button type="submit" className="border-0 text-gray-100 rounded-full text-xl py-5 px-10 cursor-pointer transition-all hover:scale-105 bg-gradient-to-br from-pink-600 to-purple-700">Submit</button>
             </p>
           </div>
         </div>

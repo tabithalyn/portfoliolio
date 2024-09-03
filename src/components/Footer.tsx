@@ -3,7 +3,7 @@ import img from "../assets/profileImg.png";
 const Footer = () => {
   return (
     <footer>
-      <div className="mb-5 mt-36 mx-16 flex flex-col gap-4">
+      <div className="mt-36 mx-20 flex flex-col gap-4">
         <div className="flex justify-between mb-2">
           <div className="text-gray-100 w-1/2 flex flex-wrap">
             <img src={img} alt="" className="w-[10%] rounded-full" />
@@ -13,8 +13,10 @@ const Footer = () => {
           </div>
           <div className="flex items-center w-1/2">
             <div className="flex gap-3 rounded-3xl text-gray-200 w-full">
-              <input type="email" name="sub-email" id="sub-email" autoComplete="false" placeholder="Enter your email..." className="outline-none border-none bg-transparent text-sm px-6 rounded-full bg-gray-300 text-gray-800 w-full" />
-              <div className="rounded-full py-3 px-5 cursor-pointer hover:scale-105 transition-all bg-gray-700">Subscribe</div>
+              <div className="bg-gradient-to-br from-pink-600 to-purple-700 w-full rounded-full p-1">
+                <input type="email" name="sub-email" id="sub-email" autoComplete="false" placeholder="Enter your email..." className="outline-none border-none bg-transparent text-sm px-6 rounded-full bg-gray-200 text-gray-800 w-full h-full" />
+              </div>
+              <div className="rounded-full py-3 px-5 cursor-pointer hover:scale-105 transition-all bg-gray-700 bg-gradient-to-br from-pink-600 to-purple-700">Subscribe</div>
             </div>
           </div>
         </div>

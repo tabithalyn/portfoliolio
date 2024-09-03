@@ -7,7 +7,7 @@ const Header = () => {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      window.addEventListener("scroll", () => setIsScrolled(window.scrollY > 300))
+      window.addEventListener("scroll", () => setIsScrolled(window.scrollY > 500))
     }
   }, []);
 
@@ -50,9 +50,9 @@ const Header = () => {
 
         {
           isScrolled ? (
-            <div className="fixed w-full flex justify-end p-4 bottom-0 right-0 text-white">
-              <Link to="navbar" className="bg-gradient-to-br from-pink-600 to-purple-700 w-12 h-12 cursor-pointer" style={{ borderRadius: "50px 80px 100px 40px/100px 60px 70px 50px" }}>
-               <HiArrowUp size={28} className="ml-2 mt-2" />
+            <div className="fixed w-full flex justify-end p-4 bottom-4 right-0 text-white">
+              <Link to="navbar" className="bg-gradient-to-br from-pink-600 to-purple-700 w-12 h-12 cursor-pointer hover:scale-110 transition-all" style={{ borderRadius: "50px 80px 100px 40px/100px 60px 70px 50px" }}>
+               <HiArrowUp size={24} className="ml-3 mt-3" />
               </Link>
             </div>
           ) : null

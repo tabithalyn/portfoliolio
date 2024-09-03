@@ -13,9 +13,9 @@ const Portfolio = () => {
             <img src={work.w_img} key={id} className="box-border w-[419px] h-[280px] transition-all cursor-pointer hover:scale-105 rounded-xl border-0 hover:border-2 hover:border-pink-700" />
           ))}
         </div>
-        <div className="flex gap-3 rounded-full border-2 border-white py-6 px-9 text-2xl font-bold mb-10 transition-all cursor-pointer bg-gray-100 hover:scale-105">
+        <div className="flex gap-3 rounded-full border-2 border-white py-4 px-7 text-xl font-bold mb-10 transition-all cursor-pointer bg-gray-100 hover:scale-105">
           <p>Show More</p>
-          <FiArrowRight size={30} className="mt-0.5" />
+          <FiArrowRight size={20} className="mt-1" />
         </div>
       </div>
     </section>
